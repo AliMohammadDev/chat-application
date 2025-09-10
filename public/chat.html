@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chat-</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body
+        class="bg-gray-900 flex items-center justify-center h-screen text-white">
+        <div
+            class="bg-gray-800 w-full max-w-md h-[90vh] flex flex-col rounded-2xl shadow-lg overflow-hidden">
+            <!-- header -->
+            <div
+                class="bg-gray-700 p-4 font-bold text-lg flex justify-between items-center">
+                <span>اهلا يا محمد 👋</span>
+                <button
+                    onclick="logout()"
+                    class="bg-red-500 px-3 py-1 rounded-lg hover:bg-red-600 text-sm">
+                    خروج
+                </button>
+            </div>
+
+            <!-- messages -->
+            <div
+                id="chatBox"
+                class="flex-1 p-4 overflow-y-auto space-y-2 bg-gray-900">
+                <div class="bg-gray-700 text-white rounded-lg p-2 max-w-xs">
+                    السلام عليكم 🌹
+                </div>
+                <div
+                    class="bg-green-600 text-white rounded-lg p-2 max-w-xs ml-auto text-right">
+                    وعليكم السلام 👋
+                </div>
+            </div>
+
+            <div class="p-3 bg-gray-700 flex space-x-2">
+                <input
+                    id="msgInput"
+                    type="text"
+                    placeholder="اكتب رسالة..."
+                    class="flex-1 px-4 py-2 rounded-full bg-gray-600 text-white border border-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500" />
+                <button
+                    onclick="sendMessage()"
+                    class="px-4 py-2 rounded-full bg-green-600 hover:bg-green-700 transition">
+                    إرسال
+                </button>
+            </div>
+        </div>
+
+        <script>
+     
+    </script>
+    </body>
+</html>

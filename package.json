@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm exec tailwindcss -i ./input.css -o ./public/css/style.css --watch",
     "dev": "nodemon index.js"
   },
   "keywords": [],
@@ -14,5 +16,6 @@
     "express": "^5.1.0",
     "nodemon": "^3.1.10",
     "socket.io": "^4.8.1"
-  }
+  },
+  "devDependencies": {}
 }
